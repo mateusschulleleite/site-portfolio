@@ -1,0 +1,156 @@
+.cabecalho {
+    position: relative;
+    background-color: var(--cor-preto);
+    display: flex;
+    align-items: center;
+    padding: 1em;
+}
+
+.cabecalho__menu-hamburguer {
+    width: 25px;
+    padding: 0.5em;
+    border: solid 2px transparent;
+    border-radius: 10px;
+    transition: .25s;
+}
+
+.cabecalho__menu-hamburguer--ativo {
+    border: solid 2px var(--cor-branco);
+    border-radius: 10px;
+}
+
+.cabecalho__titulo {
+    color: var(--cor-branco);
+    font-size: 15px;
+    font-weight: 700;
+    justify-self: flex-end;
+    padding-left: 1em;
+}
+
+.cabecalho__menu {
+    position: absolute;
+    height: calc(100vh - 56.66px);
+    width: 60%;
+    top: 56.66px;
+    left: -100vw;
+    background-color: var(--cor-preto);
+}
+
+.cabecalho__menu--ativo {
+    position: absolute;
+    left: 0;
+    transition: .25s;
+}
+
+.menu__itens {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    width: 40vw;
+    justify-content: space-evenly;
+    padding-left: 1em;
+}
+
+.menu__link {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.menu__item {
+    display: flex;
+    align-items: center;
+    padding-bottom: 0.5em;
+    border-bottom: solid 2px transparent;
+    transition: .25s;
+}
+
+.menu__item::before {
+    padding-right: 1em;
+}
+
+.menu__item--inicio::before {
+    content: url(../img/inicio.png);
+}
+
+.menu__item--sobre-mim::before{
+    content: url(../img/perfil.png);
+}
+
+.menu__item--projetos::before{
+    content: url(../img/projetos.png);
+}
+
+.menu__item--contato::before{
+    content: url(../img/contato.png);
+}
+
+@media screen and (min-width: 1024px) {
+   .cabecalho {
+    justify-content: space-between;
+    padding: 2em 15em;
+   }
+
+   .cabecalho__menu-hamburguer {
+    display: none;
+   }
+
+   .cabecalho__titulo {
+    color: white;
+    padding-left: 0;
+   }
+
+   .cabecalho__menu {
+    position: relative;
+    left: 0;
+    background-color: transparent;
+    height: 100%;
+    top: 0;
+    width: auto;
+   }
+
+   .menu__itens {
+    flex-direction: row;
+    justify-content: flex-end;
+   }
+
+   .menu__link {
+    font-size: 15px;
+   }
+
+   .menu__item {
+    margin-left: 2em;
+    transition: .25s;
+   }
+
+   .menu__item:hover {
+    border-bottom: solid 2px var(--cor-branco);
+    transition: .25s;
+    transform: scale(105%);
+   }
+
+   .menu__item::before {
+        padding: 0;
+    }
+
+    .menu__item--inicio::before {
+        display: none;
+    }
+
+    .menu__item--sobre-mim::before{
+        display: none;
+    }
+
+    .menu__item--projetos::before{
+        display: none;
+    }
+
+    .menu__item--contato::before{
+        display: none;
+    }
+
+    .menu__item--contato {
+        display: none;
+    }
+}

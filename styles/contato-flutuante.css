@@ -1,0 +1,76 @@
+.midias {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .midias {
+        display: block;
+        position: fixed;
+        left: 2em;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 50vh;
+        animation-name: slideIn;
+        animation-duration: 1.5s;
+    }
+    
+    .midias__contato-lista {
+        position: relative;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .midias__contato-lista-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: black;
+    }
+    
+    .midias__contato-lista-logo {
+        width: 50px;
+        margin-right: 1em;
+        opacity: 0.8;
+        transition: .25s;
+        filter: invert(100%);
+    }
+    
+    .midias__contato-lista-logo:hover {
+        opacity: 1;
+        text-shadow: 10px 10px 10px white;
+        transform: scale(105%);
+        transition: .25s;
+    }
+    
+    .midias__contato-lista-logo:hover ~ .midias__contato-lista-titulo {
+        left: 60px;
+        transition: .25s;
+        opacity: 1;
+    }
+    
+    .midias__contato-lista-titulo {
+        position: absolute;
+        left: 55px;
+        transition: .25s;
+        opacity: 0;
+        cursor: default;
+        color: var(--cor-branco);
+    }
+    
+    .midias__contato-curriculo {
+        width: 50px;
+        height: 50px;
+        background-color: var(--cor-branco);
+        border-radius: 50%;
+    }
+
+    @keyframes slideIn {
+        from {
+            left: -100px;
+        }
+    }
+}
+

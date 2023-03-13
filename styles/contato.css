@@ -1,0 +1,53 @@
+.container__contato {
+    background-color: var(--cor-branco);
+    margin: 0 2em;
+    padding: 3em 2em;
+    border-radius: 35px;
+}
+
+.container__contato-titulo {
+    color: var(--cor-laranja);
+    font-size: 20px;
+    font-weight: 800;
+    display: inline-block;
+}
+
+.container__contato-lista-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 1em;
+    width: 200px;
+}
+
+.container__contato-lista-logo {
+    width: 40px;
+    margin-right: 1em;
+}
+
+.container__contato-lista-titulo {
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--cor-preto);
+}
+
+.container__contato-curriculo {
+    color: var(--cor-branco);
+    background-color: var(--cor-laranja);
+    font-size: 20px;
+    font-weight: 500;
+    display: inline-block;
+    padding: 0.4em 0.6em;
+    text-decoration: none;
+    border-radius: 35px;
+}
+
+.container__contato-curriculo::before {
+    content: '\2913';
+}
+
+@media screen and (min-width: 1024px) {
+    .container__contato {
+        display: none;
+    }
+}

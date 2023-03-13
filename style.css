@@ -1,0 +1,20 @@
+@import url(./styles/menu.css);
+@import url(./styles/inicio.css);
+@import url(./styles/sobre-mim.css);
+@import url(./styles/projetos.css);
+@import url(./styles/contato.css);
+@import url(./styles/rodape.css);
+@import url(./styles/contato-flutuante.css);
+
+:root {
+    --cor-preto: #030303;
+    --cor-laranja: #d53d0c;
+    --cor-branco: #fcfcfc;
+    --cor-vermelho: #880606;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    background-color: #202020;
+}
