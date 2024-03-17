@@ -1,0 +1,50 @@
+.siteview {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  backdrop-filter: blur(10px);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999999999;
+  display: none;
+  transition: 300ms;
+}
+
+.siteview-enable {
+  display: flex;
+}
+
+.siteview div {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.siteview div img {
+  width: 50px;
+}
+
+.siteview iframe {
+  width: 80vw;
+  height: 400px;
+  border-radius: 30px;
+  padding: 10px;
+  background-color: var(--bg-color-fifth);
+  -webkit-box-shadow: 0px 0px 57px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 57px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 57px -4px rgba(0, 0, 0, 0.75);
+}
+
+@media (min-width: 1201px) {
+  .siteview iframe {
+    width: 60vw;
+    height: 400px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .siteview iframe {
+    width: 60vw;
+    height: 600px;
+  }
+}

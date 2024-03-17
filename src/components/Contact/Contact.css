@@ -1,0 +1,49 @@
+.contact {
+    background-color: var(--bg-color-secondary);
+    color: var(--color-secondary);
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.contact h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.contact .container {
+    border-top: solid 1px rgb(175, 175, 175);
+    padding-top: 20px;
+    display: flex;
+    gap: 200px;
+}
+
+.contact-socials ul {
+    display: flex;
+    gap: 20px;
+}
+
+.contact-socials ul li img {
+    width: 50px;
+}
+
+.contact-number ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+@media (max-width: 450px) {
+    .contact .container {
+        flex-direction: column;
+        gap: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact .container {
+        flex-direction: column;
+        gap: 40px;
+    }
+}

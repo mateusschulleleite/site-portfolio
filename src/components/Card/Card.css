@@ -1,0 +1,95 @@
+.card {
+  position: relative;
+  width: 300px;
+  height: 180px;
+  border-radius: 14px;
+  z-index: 1111;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  transition: 150ms;
+}
+
+.card:hover {
+  transform: scale(105%);
+  transition: 300ms;
+}
+
+.bg {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 270px;
+  height: 150px;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(24px);
+  border-radius: 10px;
+  overflow: hidden;
+  outline: 2px solid white;
+}
+
+.blob {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: var(--bg-color-primary);
+  opacity: 1;
+  filter: blur(12px);
+  animation: blob-bounce 5s infinite ease;
+}
+
+@keyframes blob-bounce {
+  0% {
+    transform: translate(-100%, -100%) translate3d(0, 0, 0);
+  }
+
+  10% {
+    transform: translate(-100%, -100%) translate3d(100%, 0, 0);
+  }
+
+  50% {
+    transform: translate(-100%, -100%) translate3d(100%, 100%, 0);
+  }
+
+  60% {
+    transform: translate(-100%, -100%) translate3d(0, 100%, 0);
+  }
+
+  100% {
+    transform: translate(-100%, -100%) translate3d(0, 0, 0);
+  }
+}
+
+.card-title {
+  color: var(--color-primary);
+  font-family: "Archivo Black", sans-serif;
+  font-size: 1.3rem;
+}
+
+.card-description {
+  margin-top: 10px;
+  height: fill;
+}
+
+.card-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.card-actions a {
+  text-decoration: none;
+  color: var(--color-primary);
+  cursor: pointer;
+}
