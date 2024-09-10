@@ -13,6 +13,36 @@ export default function Portfólio() {
         </div>
         <div className="portolio-projects">
           <Card
+            cardTitle="Crivelo - Landing Page"
+            cardDescription="Site para venda de cadeiras ergonomicas"
+            cardLive="https://www.crivelo.com.br"
+            cardRepo="https://www.crivelo.com.br"
+          />
+          <Card
+            cardTitle="Ergo I - Landing Page"
+            cardDescription="Site para venda de cadeiras ergonomicas"
+            cardLive="https://www.crivelo.com.br/ergoi"
+            cardRepo="https://www.crivelo.com.br/ergoi"
+          />
+          <Card
+            cardTitle="Ergo Basic - Landing Page"
+            cardDescription="Site para venda de cadeiras ergonomicas"
+            cardLive="https://www.crivelo.com.br/ergo-basic"
+            cardRepo="https://www.crivelo.com.br/ergo-basic"
+          />
+          <Card
+            cardTitle="Fitness Power - Landing Page"
+            cardDescription="Site para divulgação de academia"
+            cardLive="https://landingpage-fitness-power.vercel.app/"
+            cardRepo="https://github.com/mateusschulleleite/landingpage-fitness-power"
+          />
+          <Card
+            cardTitle="Nutricionista - Landing Page"
+            cardDescription="Site para nutricionista"
+            cardLive="https://landingpage-camila-almeida.vercel.app/"
+            cardRepo="https://github.com/mateusschulleleite/landingpage-camila-almeida"
+          />
+          <Card
             cardTitle="Meteora"
             cardDescription="O projeto Meteora foi criado totalmente com a biblioteca Bootstrap, em um curso de Bootstrap que realizei na Alura"
             cardLive="https://meteora-mateusschulleleite.vercel.app"
